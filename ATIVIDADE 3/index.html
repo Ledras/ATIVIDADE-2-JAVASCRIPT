@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 2 - DOM</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; max-width: 600px; }
+        .secao { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        button { margin-right: 5px; padding: 5px 10px; cursor: pointer; }
+        input[type="text"] { padding: 5px; width: 60%; }
+    </style>
+</head>
+<body>
+
+    <div class="secao">
+        <h3>Contador de cliques</h3>
+        <button id="btn-incrementar">+ Incrementar</button>
+        <button id="btn-decrementar">- Decrementar</button>
+        <p>Cliques: <span id="valor-contador" style="font-weight: bold;">0</span></p>
+    </div>
+
+    <div class="secao">
+        <h3>Adicionar texto dinâmico</h3>
+        <input type="text" id="campo-texto" placeholder="Digite uma mensagem e aperte Enter">
+        <p>Caracteres (sem incluir espaços): <span id="contagem-caracteres" style="font-weight: bold;">0</span></p>
+        <div id="area-paragrafos"></div>
+    </div>
+
+    <div class="secao">
+        <h3>Adicionar novo item</h3>
+        <select id="tipo-lista">
+            <option value="ul">Lista Não Ordenada (Marcadores)</option>
+            <option value="ol">Lista Ordenada (Números)</option>
+        </select>
+        <input type="text" id="texto-item" placeholder="Nome do item">
+        <button id="btn-adicionar-item">Adicionar</button>
+        <div id="area-listas"></div>
+    </div>
+
+    <div class="secao">
+        <button id="btn-reset" style="background-color: #ff4c4c; color: white;">Resetar Tudo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
